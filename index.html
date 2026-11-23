@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Secret Ruiva | Favoritos Gold Spell</title>
+<meta name="description" content="Os produtos Gold Spell que a Secret Ruiva usa, testa e recomenda.">
+<meta property="og:title" content="Secret Ruiva | Favoritos Gold Spell">
+<meta property="og:description" content="Ruiva de verdade testando Gold Spell. Links, série Qual ruivo é o meu? e ofertas.">
+<meta property="og:image" content="img/avatar.webp">
+<link rel="icon" href="img/avatar.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+  :root { --mag:#C40064; --mag-l:#ff3ca0; --gold:#e8b923; --bg:#000; --card:#1c1c1e; --line:#37373c; --txt:#fff; --muted:#aaaaaf; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html { scroll-behavior:smooth; }
+  body { background:var(--bg); color:var(--txt); font-family:Montserrat, system-ui, Arial, sans-serif; }
+  main { max-width:480px; margin:0 auto; padding:28px 16px 48px; }
+  a { color:inherit; }
+
+  header { text-align:center; }
+  .avatar { width:120px; height:120px; border-radius:50%; box-shadow:0 0 26px rgba(255,60,160,.55); }
+  h1 { font-weight:900; font-size:28px; margin-top:12px; }
+  .sub { color:var(--mag-l); font-weight:600; font-size:14px; margin-top:6px; }
+  .handle { color:var(--muted); font-size:13px; margin-top:4px; }
+  .socials { display:flex; justify-content:center; gap:8px; margin-top:14px; flex-wrap:wrap; }
+  .chip { font-size:12px; font-weight:700; padding:7px 12px; border-radius:99px; border:1px solid var(--line); background:var(--card); text-decoration:none; }
+  .chip.off { opacity:.5; }
+
+  nav { display:flex; gap:8px; overflow-x:auto; margin:20px -16px 0; padding:0 16px 4px; scrollbar-width:none; }
+  nav::-webkit-scrollbar { display:none; }
+  nav a { flex:none; font-size:12px; font-weight:700; padding:8px 12px; border-radius:99px; background:var(--card); border:1px solid var(--line); text-decoration:none; }
+
+  .banner { margin-top:20px; border-radius:22px; padding:20px; background:linear-gradient(135deg,#2a0016,#000 60%); border:1px solid var(--mag); position:relative; overflow:hidden; }
+  .banner b { display:block; font-weight:900; font-size:22px; }
+  .banner p { color:var(--muted); font-size:13px; margin-top:6px; line-height:1.45; }
+  .banner .btn { margin-top:14px; }
+
+  .btn { display:block; background:var(--mag); color:#fff; text-decoration:none; text-align:center; font-weight:800; padding:15px; border-radius:99px; margin-top:12px; }
+  .btn.ghost { background:transparent; border:2px solid var(--mag); }
+
+  section { margin-top:30px; scroll-margin-top:12px; }
+  .tag { display:inline-block; background:var(--mag); color:#fff; font-weight:800; font-size:12px; padding:6px 14px; border-radius:99px; letter-spacing:.5px; }
+  .tag.soon { background:transparent; border:1px solid var(--mag); color:var(--mag-l); margin-left:6px; }
+  h2 { font-weight:900; font-size:20px; margin:10px 0 4px; }
+  .lead { color:var(--muted); font-size:13px; line-height:1.45; margin-bottom:12px; }
+
+  html, body { overflow-x:hidden; }
+  .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+  .step > span:last-child { min-width:0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:10px; text-decoration:none; display:flex; flex-direction:column; }
+  .ph { background:#fff; border-radius:14px; height:150px; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative; }
+  .ph img { max-width:80%; max-height:130px; object-fit:contain; }
+  .ph .n { position:absolute; top:8px; left:8px; background:var(--mag); color:#fff; font-weight:900; font-size:12px; border-radius:99px; padding:4px 9px; }
+  .cat { color:var(--muted); font-size:11px; margin-top:10px; }
+  .nm { font-weight:600; font-size:14px; margin-top:2px; line-height:1.25; }
+  .pr { font-weight:900; font-size:16px; margin:6px 0 10px; }
+  .buy { margin-top:auto; background:var(--mag); border-radius:99px; text-align:center; font-weight:800; font-size:12px; padding:8px; }
+
+  .soonbox { background:var(--card); border:1px dashed var(--line); border-radius:20px; padding:18px; color:var(--muted); font-size:13px; line-height:1.5; text-align:center; }
+  .soonbox strong { color:var(--txt); display:block; font-size:15px; margin-bottom:4px; }
+  .videos { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; }
+  .vid { aspect-ratio:9/16; border-radius:14px; background:linear-gradient(180deg,#2a0016,#111); border:1px solid var(--line); display:flex; align-items:flex-end; justify-content:center; padding:8px; font-size:11px; font-weight:800; text-align:center; }
+
+  .steps { display:flex; flex-direction:column; gap:10px; }
+  .step { display:flex; gap:12px; align-items:center; background:var(--card); border:1px solid var(--line); border-radius:18px; padding:10px; text-decoration:none; }
+  .step .ic { flex:none; width:64px; height:64px; background:#fff; border-radius:12px; display:flex; align-items:center; justify-content:center; }
+  .step .ic img { max-width:80%; max-height:56px; }
+  .step .num { color:var(--mag-l); font-weight:900; font-size:12px; }
+  .step .t { font-weight:800; font-size:14px; }
+  .step .d { color:var(--muted); font-size:12px; margin-top:2px; }
+
+  details { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 16px; margin-top:10px; }
+  summary { font-weight:800; font-size:14px; cursor:pointer; list-style:none; }
+  summary::after { content:"+"; float:right; color:var(--mag-l); font-weight:900; }
+  details[open] summary::after { content:"–"; }
+  details p { color:var(--muted); font-size:13px; line-height:1.5; margin-top:8px; }
+
+  footer { color:var(--muted); font-size:11px; text-align:center; margin-top:34px; line-height:1.6; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img class="avatar" src="img/avatar.webp" alt="Ilustração da Secret Ruiva">
+    <h1>Secret Ruiva</h1>
+    <p class="sub">Influencer Gold Spell • cabelo ruivo de verdade</p>
+    <p class="handle">@secretruivagold</p>
+    <div class="socials">
+      <a class="chip" href="https://www.instagram.com/secretruivagold/" target="_blank" rel="noopener">Instagram</a>
+      <span class="chip off">TikTok • em breve</span>
+      <span class="chip off">WhatsApp • em breve</span>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#ruivos">Qual ruivo?</a>
+    <a href="#rotina">Rotina ruiva</a>
+    <a href="#favoritos">Favoritos</a>
+    <a href="#kit">Kit da Ruiva</a>
+    <a href="#lives">Lives</a>
+    <a href="#duvidas">Dúvidas</a>
+  </nav>
+
+  <div class="banner">
+    <b>Black Friday na loja oficial</b>
+    <p>A Gold Spell está com a campanha "Goold in Black". Confira os preços da semana direto na loja.</p>
+    <!-- LINK: trocar pelo link de afiliada da loja -->
+    <a class="btn" href="https://goold.shop/" target="_blank" rel="noopener">Ver ofertas da Black</a>
+  </div>
+
+  <section id="ruivos">
+    <span class="tag">SÉRIE</span>
+    <h2>Qual ruivo é o meu?</h2>
+    <p class="lead">Vou testar os 4 Vibratons quentes no meu cabelo, um vídeo por tom, com antes e depois na mesma luz.</p>
+    <div class="grid" id="g-ruivos"></div>
+  </section>
+
+  <section id="videos">
+    <span class="tag">VÍDEOS DA SÉRIE</span><span class="tag soon">em breve</span>
+    <h2>Antes e depois</h2>
+    <p class="lead">Os Reels de cada tom entram aqui assim que saírem.</p>
+    <div class="videos">
+      <div class="vid">#1 Morango</div><div class="vid">#2 Acerola</div><div class="vid">#3 Tangerina</div><div class="vid">#4 Pitanga</div>
+    </div>
+  </section>
+
+  <section id="rotina">
+    <span class="tag">ROTINA</span>
+    <h2>Minha rotina de ruiva</h2>
+    <p class="lead">Ruivo desbota rápido. Esta é a ordem que eu uso para manter a cor viva.</p>
+    <div class="steps" id="steps"></div>
+  </section>
+
+  <section id="favoritos">
+    <span class="tag">MEUS FAVORITOS</span>
+    <h2>Os que eu mais uso</h2>
+    <div class="grid" id="g-favoritos"></div>
+  </section>
+
+  <section id="kit">
+    <span class="tag">KIT DA RUIVA</span><span class="tag soon">em breve</span>
+    <h2>Kit Ruiva Poderosa</h2>
+    <div class="soonbox"><strong>Combo montado por mim</strong>Limpeza, tratamento e cor em um só lugar. Estou fechando os detalhes com a Gold.</div>
+  </section>
+
+  <section id="cupom">
+    <span class="tag">CUPOM</span><span class="tag soon">em breve</span>
+    <h2>Desconto exclusivo</h2>
+    <div class="soonbox"><strong>Cupom da Secret Ruiva</strong>Quando sair, ele aparece aqui e no canal do WhatsApp primeiro.</div>
+  </section>
+
+  <section id="lives">
+    <span class="tag">LIVES</span><span class="tag soon">em breve</span>
+    <h2>Live toda semana</h2>
+    <div class="soonbox"><strong>Dia e horário fixos</strong>Aplicação ao vivo, perguntas e link na hora. A agenda sai aqui e nos Stories.</div>
+  </section>
+
+  <section id="whats">
+    <span class="tag">OFERTAS</span><span class="tag soon">em breve</span>
+    <h2>Canal no WhatsApp</h2>
+    <div class="soonbox"><strong>Ofertas sem perder nenhuma</strong>Só eu posto, você só recebe. Sem grupo e sem spam.</div>
+  </section>
+
+  <section id="duvidas">
+    <span class="tag">DÚVIDAS</span>
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Vibratons funciona em qualquer cabelo?</summary><p>A Gold indica para cabelos naturais, tingidos ou descoloridos. Em cabelo escuro o efeito é de reflexo; em cabelo claro a cor aparece mais.</p></details>
+    <details><summary>Onde eu compro?</summary><p>Os botões levam para a loja oficial da Gold Spell. A compra, o pagamento e a entrega são feitos pela Gold.</p></details>
+    <details><summary>Os links são de parceria?</summary><p>Sim. Sou influencer Gold Spell e ganho uma comissão quando você compra pelo meu link, sem custo a mais para você.</p></details>
+    <details><summary>Ficou com outra dúvida?</summary><p>Manda direct no Instagram @secretruivagold que eu respondo.</p></details>
+  </section>
+
+  <footer>#publi • Links de parceria Gold Spell.<br>Preços da loja oficial em 23/11/2026 e podem mudar.</footer>
+</main>
+<script>
+  // LINK: trocar cada endereço pelo link de afiliada da Janaina (app da Gold).
+  const P = {
+    morango:   ["Vibratons Morango", "Pigmentantes", "R$ 108,57", "vibratons-morango-150ml", "https://goold.shop/product/pigmentantes/vibratons-morango-150ml"],
+    acerola:   ["Vibratons Acerola", "Pigmentantes", "R$ 108,57", "vibratons-acerola-150ml", "https://goold.shop/product/pigmentantes/vibratons-acerola-150ml"],
+    tangerina: ["Vibratons Tangerina", "Pigmentantes", "R$ 108,57", "vibratons-tangerina-150ml", "https://goold.shop/product/pigmentantes/vibratons-tangerina-150ml"],
+    pitanga:   ["Vibratons Pitanga", "Pigmentantes", "R$ 108,57", "vibratons-pitanga-150ml", "https://goold.shop/product/pigmentantes/vibratons-pitanga-150ml"],
+    tonico:    ["Tônico Poderoso 250ml", "Tratamento capilar", "R$ 149,99", "tonico-poderoso-250ml", "https://goold.shop/product/tratamento-capilar/tonico-poderoso-250ml"],
+    reparei:   ["Mask Reparei Everk 300g", "Máscaras Everk", "R$ 147,77", "mask-reparei-everk-300g", "https://goold.shop/product/mascaras-everk/mask-reparei-everk-300g"],
+    everk:     ["Shampoo e Condicionador Everk", "Pós-química", "R$ 147,77", "shampoo-e-condicionador-everk-pos-quimica", "https://goold.shop/product/hidrante-capilar/shampoo-e-condicionador-everk-pos-quimica"],
+    progressiva:["Progressiva Everk 500ml", "Sem formol", "R$ 349,00", "progressiva-everk-500ml-tecnologia-coreana", "https://goold.shop/product/progressiva-sem-formol/progressiva-everk-500ml-tecnologia-coreana"],
+    liso:      ["Liso Ético", "Finalizadores", "R$ 149,97", "liso-etico", "https://goold.shop/product/finalizadores/liso-etico"],
+    laranja:   ["Laranja Poderoso", "Shampoo e condicionador", "R$ 149,99", "shampoo-e-condy-laranja-poderoso", "https://goold.shop/product/shampoo-e-condicionador/shampoo-e-condy-laranja-poderoso"],
+  };
+  const card = (k, n) => { const [nm, cat, pr, img, link] = P[k]; return `
+    <a class="card" href="${link}" target="_blank" rel="noopener">
+      <div class="ph">${n ? `<span class="n">#${n}</span>` : ""}<img src="img/${img}.webp" alt="${nm}" loading="lazy"></div>
+      <span class="cat">${cat}</span><span class="nm">${nm}</span><span class="pr">${pr}</span>
+      <span class="buy">Comprar</span>
+    </a>`; };
+  document.getElementById("g-ruivos").innerHTML = ["morango","acerola","tangerina","pitanga"].map((k,i) => card(k, i+1)).join("");
+  document.getElementById("g-favoritos").innerHTML = ["tonico","reparei","everk","progressiva","liso","laranja"].map(k => card(k)).join("");
+  const steps = [
+    ["everk", "Lavar", "Shampoo e condicionador pós-química, sem pesar o fio."],
+    ["reparei", "Tratar", "Máscara uma vez por semana para o fio aguentar a cor."],
+    ["morango", "Reavivar a cor", "Vibratons quando o ruivo começa a desbotar."],
+    ["tonico", "Raiz forte", "Tônico Poderoso no couro cabeludo."],
+  ];
+  document.getElementById("steps").innerHTML = steps.map(([k, t, d], i) => { const [nm,, , img, link] = P[k]; return `
+    <a class="step" href="${link}" target="_blank" rel="noopener">
+      <span class="ic"><img src="img/${img}.webp" alt="${nm}"></span>
+      <span><span class="num">PASSO ${i+1}</span><div class="t">${t} • ${nm}</div><div class="d">${d}</div></span>
+    </a>`; }).join("");
+</script>
+</body>
+</html>
